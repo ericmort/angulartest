@@ -1,0 +1,21 @@
+<div class="container-fluid" style="border: 0px solid blue">
+    <div class="col-md-12">
+
+        <!--Body content-->
+        <div class="row-fluid" style="border: 0px solid orange"  >
+            <div class="list-group">
+                <div class="panel" ng-repeat="post in currentGroup.posts" >
+                <!--<div class="panel" ng-repeat="image in images" >    -->
+                    {{image.caption}}
+                    <div class="row-fluid">
+                        <a ng-click="openLightboxModal($index)">
+                            <!--<img ng-src="{{image.thumbUrl}}" class="img-thumbnail">-->
+                            <img ng-src="{{post.image.thumbnail}}" class="img-thumbnail">
+                        </a>
+                        <!--<img src="{{ post.image.thumbnail }}"></img>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

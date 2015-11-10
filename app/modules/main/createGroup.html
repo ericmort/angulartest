@@ -1,0 +1,24 @@
+   
+<div id="modal"><!-- Used for getting the right margins around the sign up box-->
+    <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-plus"></i> Create new group <a class="pull-right fa fa-close" ng-click="cancel()"></a></div>
+        <div class="panel-body">
+            <!-- FORM -->
+            <form name="modalForm" novalidate>        
+                <div class="form-group" ng-class="{'has-error' : modalForm.groupName.$invalid && !modalForm.groupName.$pristine }">
+                    <label>Group name:</label>
+                    <input focus-me="{{true}}" class="form-control" type="text" name="groupName" ng-model="type.name" ng-focus="groupName=''" ng-minlength="2" required placeholder="My new group">  
+                    <p class ="help-block" ng-show="modalForm.groupName.$error.minlength && !modalForm.groupName.$pristine">Your group name must be at least 2 characters</p>
+                </div>
+                <hr>
+                <div class="bg-danger">{{error}}</div>
+            </form>
+        </div>
+        <div class="panel-footer">
+            
+            <button class="btn btn-primary" ng-click="ok()" type="submit" ng-disabled="modalForm.$invalid">Create</button>
+                 <button class="btn btn-default" ng-click="cancel()">Cancel</button>
+            
+        </div>
+    </div>
+</div>    

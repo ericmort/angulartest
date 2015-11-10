@@ -1,0 +1,28 @@
+<div id="modal" >
+       <!-- Used for getting the right margins around the sign up box-->
+    <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-plus"></i> Invite someone: <a class="pull-right fa fa-close" ng-click="cancel()"></a></div>
+        <div class="panel-body">
+            <!-- FORM -->
+            <form name="modalForm" novalidate>
+                <div class="form-group" ng-class="{'has-error' : modalForm.postName.$invalid && !modalForm.postName.$pristine }">
+                    <label>Type email of user to invite:</label>
+                    <textarea focus-me="{{true}}" class="form-control" type="textarea" rows="10" name="text" ng-model="text" ng-focus="text=''" ng-minlength="2" required placeholder="Type the email of a user to invite"></textarea>  
+                    <p class ="help-block" ng-show="modalForm.postName.$error.minlength && !modalForm.postName.$pristine">Email must be at least 2 characters</p>
+                </div>
+                <hr>
+                <div flow-init="{singleFile:true}" flow-file-added="!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]" class="ng-scope">
+                    <!--<div class="panel-footer">-->
+                        <button class="btn btn-primary ladda-button" data-style="expand-right" ladda="loading" ng-click="ok($flow.files[0].file)"  ng-disabled="modalForm.$invalid">
+                            <span class="ladda-label">Send invitation email</span>
+                            <span class="ladda-spinner"></span>
+                            <div class="ladda-progress" style="width: 0px:"></div>
+                        </button>
+                        <button class="btn btn-default" ng-click="cancel()">Cancel</button>
+            
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>    

@@ -1,0 +1,378 @@
+#app .navbar-custom {
+  background: #ECF0F1; }
+  #app .navbar-custom a {
+    color: #334145; }
+
+#app .btn {
+  margin-top: 7px;
+  margin-left: 10px;
+  background-color: transparent; }
+
+#app .dropdown a {
+  color: #0097D7; }
+
+#app .dropdown i {
+  font-size: 18px;
+  color: #334145; }
+
+#app .dropdown-toggle i, #app button i {
+  color: #fff;
+  color: #334145; }
+
+#app .dropdown-menu a {
+  color: #2C3E50 !important; }
+
+#app .my-drop-zone {
+  border: dotted 3px lightgray; }
+
+#hero {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+input {
+  border-color: #f0f0f0 !important;
+  box-shadow: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 400; }
+
+/* Remove any predefined styling on the email and password input fields*/
+input[type="email"], input[type="password"] {
+  /* Then Style */
+  border-radius: 3px;
+  padding: 10px;
+  line-height: 20px;
+  background: transparent;
+  box-shadow: none !important; }
+
+#form {
+  height: 100vh;
+  background: #fff; }
+  #form h2 {
+    padding: 0; }
+  #form .form-wrapper {
+    padding-bottom: 50px;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 20%;
+    background: transparent; }
+  #form .panel {
+    border-color: #dde4e6;
+    background: transparent; }
+  #form .panel-heading {
+    color: #7F8C8D;
+    border-color: #eee;
+    background: #ECF0F1; }
+  #form .panel-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+    padding-left: 40px;
+    padding-right: 40px; }
+  #form .panel-footer {
+    border-color: #eee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #ECF0F1;
+    padding-left: 40px;
+    padding-right: 40px; }
+  #form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px; }
+  #form p {
+    font-size: 14px; }
+  #form .btn-success {
+    background: #FF4442;
+    border-color: #FF4442;
+    color: #fff; }
+  #form .btn-success:hover {
+    background: rgba(255, 68, 66, 0.8);
+    border-color: #FF4442; }
+
+@import url("//fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700");
+@import url("//fonts.googleapis.com/css?family=Montserrat:400,700");
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004) !important; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Work Sans", "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: transparent;
+  background: white;
+  cursor: auto;
+  font-size: 10px;
+  line-height: 10px; }
+
+.container-fluid {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1024px; }
+
+.btn {
+  font-family: 'Montserrat';
+  border-radius: 3px; }
+
+.break {
+  margin-top: 70px;
+  margin-bottom: 70px; }
+
+.dark {
+  background: #2C3E50 !important; }
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  section .section-spacer {
+    margin-bottom: 100px; }
+  section .inline-list ul, section .inline-list li {
+    list-style-type: none;
+    display: inline-block; }
+  section h2 {
+    color: #EF5350;
+    font-size: 2.0em;
+    margin-top: 0;
+    padding-top: 0; }
+  section p {
+    color: #4d5659; }
+  section i {
+    font-size: 14em;
+    vertical-align: middle;
+    color: #EF5350;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1); }
+
+h1 {
+  font-size: 2.8em;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+h2 {
+  font-size: 2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  line-height: 1.6em;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1); }
+
+h3 {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: #EF5350; }
+
+p {
+  margin: 0 0 25px;
+  font-size: 1.8em;
+  line-height: 1.6em;
+  font-weight: 400; }
+
+li {
+  font-size: 1.8em; }
+
+code {
+  background: white;
+  color: #F39C12;
+  font-size: 2em; }
+
+#navigation a {
+  font-weight: 600;
+  color: #2196F3; }
+
+#navigation .dropdown-toggle, #navigation button {
+  color: #FFF; }
+
+#intro {
+  height: 600px;
+  height: 60vh;
+  background: #FFF;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  #intro .btn {
+    margin-top: 30px; }
+  #intro h1 {
+    font-weight: 400;
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 48px;
+    font-family: 'Montserrat'; }
+  #intro h2 {
+    color: #4d5659;
+    font-family: "Work Sans"; }
+  #intro p {
+    text-align: center;
+    color: #333;
+    font-weight: 400;
+    font-size: 1.8em; }
+  #intro a {
+    text-align: center !important; }
+  #intro .icon i {
+    color: #EF5350;
+    font-size: 6em; }
+
+.section-base h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 400; }
+
+.section-base h2 {
+  color: #FFF;
+  font-size: 2.0em; }
+
+.section-base p {
+  color: #fff; }
+
+.section-base a {
+  color: #fff; }
+
+.section-base img {
+  width: 50%;
+  margin: 0 auto;
+  vertical-align: bottom; }
+
+.section-base i {
+  color: #fff !important; }
+
+.section-angular {
+  background: #EF5350;
+  border-bottom: 3px solid #ed3c39; }
+
+.ion-icons {
+  background: #2196F3;
+  border-bottom: 3px solid #0d8aee; }
+
+.section-node {
+  background: #ECF0F1;
+  border-bottom: 3px solid #dde4e6; }
+  .section-node h2 {
+    color: #495d62; }
+  .section-node i {
+    color: #EF5350; }
+  .section-node p {
+    color: #5e7980; }
+
+#footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #fff;
+  color: #444; }
+  #footer ul {
+    list-style-type: none; }
+  #footer .heading {
+    font-weight: 600;
+    padding-bottom: 5px; }
+
+.btn {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.navbar-custom {
+  font-family: 'Montserrat';
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .navbar-custom a {
+    font-size: .6em;
+    font-weight: 400 !important; }
+
+.navbar-custom .navbar-brand {
+  font-weight: 400;
+  font-size: 1.4em;
+  color: #333; }
+  .navbar-custom .navbar-brand i {
+    font-size: 2em;
+    vertical-align: middle; }
+
+.navbar-custom .navbar-brand:focus {
+  outline: 0; }
+
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px; }
+
+.top-nav-collapse a {
+  color: #fff !important; }
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: 0; }
+
+.navbar-custom .nav li.active {
+  outline: nonte;
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.navbar-custom .nav li a {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out; }
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a.active {
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  background: #dde4e6;
+  color: #2196F3 !important;
+  cursor: pointer; }
+
+.btn-success {
+  background: #EF5350;
+  border-color: #EF5350;
+  color: #fff; }
+
+.btn-success:hover {
+  background: rgba(239, 83, 80, 0.8);
+  border-color: #EF5350; }
+
+.btn-success-inverse {
+  background: #fff;
+  border-color: #fff;
+  color: #EF5350 !important; }
+
+.btn-green {
+  background: #fff;
+  border-color: #FFF;
+  color: #4e9000; }
+
+.btn-green:hover {
+  background: rgba(204, 255, 144, 0.8);
+  color: #fff; }
+
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  section img {
+    display: none !important; } }
+
+/* Landscape phones and smaller */
+/* All sizes */
+@media (min-width: 167px) {
+  .navbar {
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: 0 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out; }
+  .top-nav-collapse {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .top-nav-collapse a {
+      color: #fff; }
+  .navbar-custom.top-nav-collapse {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); } }

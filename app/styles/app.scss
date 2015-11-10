@@ -1,0 +1,178 @@
+$brand-color: #555;
+
+$red:  #FF4442;
+$blue: #0097D7;
+$yellow: #FFC30D;
+$green: #65C873;
+$purple: rgb(143,131,202);
+
+$TURQUOISE_LIGHT:#1ABC9C;
+$TURQUOISE_DARK: #16A085;
+
+$GREEN_LIGHT:#2ECC71;
+$GREEN_DARK:#27AE60;
+
+$BLUE_LIGHT:#3498DB;
+$BLUE_DARK:#2980B9;
+
+$APSPHALT_LIGHT:#34495E;
+$APSPHALT_DARK:#2C3E50;
+
+$CLOUDS:#ECF0F1;
+$SILVER: #BDC3C7;
+
+$RED_LIGHT:#E74C3C;
+$RED_DARK:#C0392B;
+
+$ORANGE_LIGHT: #E67E22;
+$ORANGE_DARK: #D35400;
+
+$YELLOW_LIGHT: #F1C40F;
+$YELLOW_DARK: #F39C12;
+
+$PURPLE_LIGHT: #9B59B6;
+$PURPLE_DARK: #8E44AD;
+
+$GREY_LIGHT:#95A5A6;
+$GREY_DARK:#7F8C8D;
+
+
+#app {
+	.navbar-custom {
+		background:$CLOUDS;
+		a {
+			color: darken($CLOUDS,70%);
+		}
+	}
+	.btn{
+		margin-top: 7px;
+		margin-left: 10px;
+		background-color:transparent;
+		
+	}
+
+	.dropdown {		
+		a {
+			color: $blue;
+		}
+		i {
+			font-size: 18px;
+			color: darken($CLOUDS,70%);
+		}
+	}
+	.dropdown-toggle, button {				
+		i {
+			color:#fff;
+			color: darken($CLOUDS,70%);
+		}		
+	}
+	.dropdown-menu {
+		a {
+			color: $APSPHALT_DARK !important;
+		}
+	}
+
+	.my-drop-zone { 
+		border: dotted 3px lightgray; 
+	}
+            
+	
+}
+
+#hero {	
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+
+input {
+
+	border-color: rgb(240,240,240) !important;
+	box-shadow:none;	
+	-webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 400;
+}
+
+/* Remove any predefined styling on the email and password input fields*/
+input[type="email"], input[type="password"] {   
+   
+    /* Then Style */
+    border-radius: 3px;
+    padding: 10px;
+    
+    
+    line-height: 20px;    
+    background: transparent;      
+    box-shadow:none !important;
+}
+
+#form {
+	height:100vh;
+	background:#fff;
+	
+    
+
+    h2 {
+    	padding:0;
+    }
+
+	.form-wrapper {
+		padding-bottom: 50px;		
+		margin:0 auto;		
+		max-width: 400px;
+		margin-top: 20%;		
+		background: transparent;
+	}
+
+	.panel {
+		border-color:darken($CLOUDS,5%);
+		background:transparent;		
+	}
+
+	.panel-heading {
+		color:$GREY_DARK;
+		border-color:#eee;
+		background:$CLOUDS;
+		
+	}
+	.panel-body {
+		padding-top:50px;
+		padding-bottom:50px;		
+		background:#fff;
+		padding-left:40px;
+		padding-right:40px;
+	}
+	.panel-footer {
+		border-color:#eee;
+		padding-top:20px;
+		padding-bottom:20px;
+		background:$CLOUDS;
+		padding-left:40px;
+		padding-right:40px;
+	}
+
+	label {
+		font-size: 14px;
+		font-weight: 600;
+		color: #333;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+.btn-success { 
+  background:$red;
+  border-color: $red;
+  color :#fff;
+}
+
+.btn-success:hover {
+  background:rgba($red,.8);
+  border-color:$red;
+
+
+}
+}

@@ -1,0 +1,45 @@
+<div id="modal" >
+       <!-- Used for getting the right margins around the sign up box-->
+    <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-plus"></i> Create new post <a class="pull-right fa fa-close" ng-click="cancel()"></a></div>
+        <div class="panel-body">
+            <!-- FORM -->
+            <form name="modalForm" novalidate>
+                <div class="form-group" ng-class="{'has-error' : modalForm.postName.$invalid && !modalForm.postName.$pristine }">
+                    <label>What's on your mind:</label>
+                    <textarea focus-me="{{true}}" class="form-control" type="textarea" rows="10" name="text" ng-model="text" ng-focus="text=''" ng-minlength="2" required placeholder="Write something here"></textarea>  
+                    <p class ="help-block" ng-show="modalForm.postName.$error.minlength && !modalForm.postName.$pristine">Your post must be at least 2 characters</p>
+                </div>
+                <hr>
+                <div flow-init="{singleFile:true}" flow-file-added="!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]" class="ng-scope">
+                    <h3>
+                        <a name="image-example" class="anchor" href="#image-example"><span class="octicon octicon-link"></span></a>Add photo
+                    </h3>
+                    <div class="thumbnail" ng-show="!$flow.files.length" flow-drop>
+                        <img src="http://www.placehold.it/400x300/EFEFEF/AAAAAA&amp;text=no+image">
+                    </div>
+                    <div class="thumbnail ng-hide" ng-show="$flow.files.length">
+                          <img flow-img="$flow.files[0]">
+                    </div>
+                    <div>
+                        <span class="btn btn-primary" ng-show="!$flow.files.length" flow-btn="">Select image<input type="file" style="visibility: hidden; position: absolute;"></span>
+                        <span class="btn btn-info ng-hide" ng-show="$flow.files.length" flow-btn="">Change<input type="file" style="visibility: hidden; position: absolute;"></span>
+                        <span class="btn btn-danger ng-hide" ng-show="$flow.files.length" ng-click="$flow.cancel()">Remove</span>
+                    </div>
+                    <p>
+                        Only PNG,GIF,JPG,JEPG files allowed.
+                    </p>
+                    <!--<div class="panel-footer">-->
+                        <button class="btn btn-primary ladda-button" data-style="contract-overlay" ladda="loading" ng-click="ok($flow.files[0].file)"  ng-disabled="modalForm.$invalid">
+                            <span class="ladda-label">Save</span>
+                            <span class="ladda-spinner"></span>
+                            <div class="ladda-progress" style="width: 0px:"></div>
+                        </button>
+                        <button class="btn btn-default" ng-click="cancel()">Cancel</button>
+            
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>    
